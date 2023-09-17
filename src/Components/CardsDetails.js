@@ -89,6 +89,7 @@ const CardsDetails = ({ cartData, setCartData }) => {
             height: "350px",
             padding: "10px",
             display: "inline-block",
+            
 
             "@media (max-width: 768px)": { 
               width: "100%", 
@@ -104,16 +105,16 @@ const CardsDetails = ({ cartData, setCartData }) => {
             style={{ width: "100%", height: "65%", objectFit: "cover" }}
           />
 
-          <Box>
-            <Typography>{item.title}</Typography>
+          <Box >
+            <Typography sx={{fontSize:"14px"}}>{item.title}</Typography>
           </Box>
 
           <Box>
-            <Typography>₹{item.price}</Typography>
+            <Typography sx={{fontSize:"14px"}}>₹{item.price}</Typography>
           </Box>
 
           <Box>
-            <Typography>Rating {item.rating}</Typography>
+            <Typography sx={{fontSize:"14px"}}>Rating {item.rating}</Typography>
           </Box>
           
 
