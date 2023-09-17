@@ -1,6 +1,5 @@
 import { Box, Button, Chip, IconButton, Paper, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-// import { Cardsdata } from "./CardsData";
 
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
@@ -79,7 +78,7 @@ const CardsDetails = ({ cartData, setCartData }) => {
         ))}
       </Box>
       {products
-        .filter((item) => selectedCategory === null || item.category === selectedCategory) // Step 4: Apply the category filter
+        .filter((item) => selectedCategory === null || item.category === selectedCategory) 
         .map((item, index) => (
         <Paper
           key={index}
@@ -90,6 +89,13 @@ const CardsDetails = ({ cartData, setCartData }) => {
             height: "350px",
             padding: "10px",
             display: "inline-block",
+
+            "@media (max-width: 768px)": { 
+              width: "100%", 
+              marginBottom: "16px", 
+            },
+
+            
           }}
         >
           <img

@@ -45,10 +45,8 @@ function CheckoutPage({ cartData, setCartData, setCheckoutStatus }) {
       alert("Order placed successfully!");
       setCheckoutStatus(false);
     }
-    // You can handle form submission logic here, e.g., sending data to a server.
   };
 
-  // Dummy cart contents
   const cartContents = cartData.map((item) => (
     <ListItem key={item.id}>
       <ListItemText
@@ -61,7 +59,6 @@ function CheckoutPage({ cartData, setCartData, setCheckoutStatus }) {
   return (
     <Container maxWidth="lg">
       <Grid container spacing={2}>
-        {/* Left Column - Shipping and Payment Card */}
         <Grid item xs={12} sm={6}>
           <Card sx={{ p: 2 }}>
             <CardContent>
@@ -70,7 +67,6 @@ function CheckoutPage({ cartData, setCartData, setCheckoutStatus }) {
               </Typography>
               <form onSubmit={handleSubmit}>
                 <Grid container spacing={2}>
-                  {/* ... Shipping and Payment form fields (same as before) */}
                   <Grid item xs={12} sm={6}>
                     <TextField
                       fullWidth
@@ -176,8 +172,7 @@ function CheckoutPage({ cartData, setCartData, setCheckoutStatus }) {
             </CardContent>
           </Card>
         </Grid>
-        {/* Right Column - Cart Contents */}
-        <Grid item xs={12} sm={6}>
+       <Grid item xs={12} sm={6}>
           <Card sx={{ p: 2 }}>
             <CardContent>
               <Typography variant="h5" gutterBottom>

@@ -1,4 +1,3 @@
-// import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Box } from "@mui/material";
@@ -6,7 +5,6 @@ import { useState } from "react";
 import Header from "./Components/Header";
 import CardsDetails from "./Components/CardsDetails";
 import CheckoutPage from "./Components/CheckoutPage";
-// import { Check } from "@mui/icons-material";
 
 function App() {
   const [cartData, setCartData] = useState([]);
