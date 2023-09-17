@@ -50,4 +50,4 @@ To run the project locally, follow these steps:
    git clone https://github.com/tejas0613/totalitycorp-frontend-challenge.git
 
 2. You can also visit the site hosted on Vercel:
-    https://totalitycorp-frontend-challenge-1nvmkhksp-tejas0613.vercel.app/
+    https://totalitycorp-frontend-challenge-tejas0613.vercel.app/
